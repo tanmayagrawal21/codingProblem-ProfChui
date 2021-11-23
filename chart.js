@@ -18,7 +18,7 @@ function drawChart() {
             
             for(var i=0; i<response.length; i++){
                 rows.push(
-                    [{'v':`${response[i].name}`,'f':`${response[i].name}`},'All Plants'],
+                    [{'v':`${response[i].name}_name`,'f':`${response[i].name}`},'All Plants'],
                 );  
             }
 
@@ -26,7 +26,7 @@ function drawChart() {
                 let item= response[i];
                 if (item.leaf.color!='' || item.leaf.shape!=''){
                     rows.push(
-                        [{'v':`Leaf${item.name}`, f:'Leaf'}, `${item.name}`],
+                        [{'v':`Leaf${item.name}`, f:'Leaf'}, `${item.name}_name`],
                     );
                 }
             }
@@ -34,7 +34,7 @@ function drawChart() {
                 let item= response[i];
                 if (item.stem.color!=''){
                     rows.push(
-                        [{'v':`Stem${item.name}`, f:'Stem'}, `${item.name}`],
+                        [{'v':`Stem${item.name}`, f:'Stem'}, `${item.name}_name`],
                     );
                 }
             }
@@ -70,7 +70,7 @@ function drawChart() {
                 }
             }
             var item= document.querySelector(`.${className}`);
-            item.style.backgroundColor="lightyellow";
+            item.style.backgroundColor="yellow";
            })
 
 
