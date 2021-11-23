@@ -1,0 +1,22 @@
+[
+        {
+        "name":"PlantA",
+        "leaf":{
+            "color":"Green",
+            "shape":"Toothed"
+        },
+        "stem":{
+            "color":"Green"
+        }
+    },
+        {
+        "name":"PlantB",
+        "leaf":{
+            "color":"Red",
+            "shape":""
+        },
+        "stem":{
+            "color":""
+        }
+    }
+]
